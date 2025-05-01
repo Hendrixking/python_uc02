@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Elemento HEADER --> 
+    <header>
+        <h1>Formulario</h1>
+
+    </header>
+
+    <!-- Ememento MAIN - Área principal da página -->
+    <main>
+        <section id="section1">
+            <form
+            action="/cadastro"
+            methad="post"
+            targat="_blank">
+    
+            <label for="nome">Nome:</label>
+            <input type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="seu nome completo">
+            
+            <label for="email">E-mail:</label>
+            <input type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="exemple@email.com"
+                title="Formato: (xx)xxxxx-xxxxx">
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel"
+                id="telefone"
+                name="telefone"
+                required=""
+                pattern="[0-9](11)"
+                placeholder="[XX]XXXX-XXXX">
+               
+    
+            <label for="senha">Senha:</label>
+            <input type="password"
+                id="senha"
+                name="senha"
+                required
+                minlength="g">
+            
+            <button type="submit">cadastral</button>
+            <button type="reset">limpar</button>
+
+            
+    
+    
+        </section>
+    </main>
+
+    <!-- Elemento FOOTER - Roda-pé da página --> 
+    <footer id="footer">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

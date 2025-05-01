@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #a8a6a6;
+            color: #333;
+        }
+
+        .form-container {
+            width: 50%;
+            margin-left: 0;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid rgb(1, 45, 245);
+            border-radius: 4px;
+        }
+
+        button {
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #0207ff;
+            color: white;
+            border: none;
+        }
+
+        main {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- HEADER -->
+        <h1 style="text-align:center; color:rgb(189, 31, 31)">Formulário</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section id="section1" class="form-container">
+            <form action="/cadastro" method="post" target="_blank">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" rua="rua" required placeholder="Digite a sua rua">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required placeholder="Digite a eu bairro">
+
+                <label for="cidade">cidade:</label>
+                <input type="text" id="cidade" name="Cidade" required pattern="Digite sua cidade" placeholder="Sua cidade">
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="Estado" required minlength="estado" placeholder="Seu estado">
+                 
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" rua="Complemento" required placeholder="Digite seu Complemento">
+
+                <label for="cep">Cep:</label>
+                <input type="text" id="cep" name="Cep" required placeholder="Digite a seu cep">
+
+                <label for="cpf">Cpf:</label>
+                <input type="text" id="cpf" name="Cpf" required pattern="Digite seu cpf" placeholder="Digite seu cpf">
+
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" name="senha" required minlength="Senha" placeholder="Digite sua senha">
+  
+                <label for="conf.senha">Conf.senha:</label>
+                <input type="text" id="conf.senha" name="Conf.senha" required placeholder="Confirme a senha">
+
+                <label for="data de nascimento">Data de nasc:</label>
+                <input type="text" id="data de nasc." name="Data de nasc." required pattern="Digite seu cpf" placeholder="Sua data de nascimento">
+
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="Login" required minlength="login" placeholder="Digite o login">
+
+
+
+
+
+
+                <div style="display: flex; gap: 10px;">
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" style="text-align: center;">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
