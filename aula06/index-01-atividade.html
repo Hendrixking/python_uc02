@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fffefe;
+            color: #333;
+        }
+
+        .form-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid rgb(1, 45, 245);
+            border-radius: 4px;
+        }
+
+        button {
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #0207ff;
+            color: white;
+            border: none;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        main {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center; color:rgb(0, 0, 0)">Formulário</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <form id="form-cadastro">
+                <div class="form-group">
+                    <label for="numero1">1° Número:</label>
+                    <input type="text" id="numero1" name="numero1" required placeholder="Digite um número">
+                </div>
+                <div class="form-group">
+                    <label for="numero2">2° Número:</label>
+                    <input type="text" id="numero2" name="numero2" required placeholder="Digite outro número">
+                </div>
+                <div class="button-group">
+                    <button type="button" id="converter">Converter</button>
+                    <button type="button" id="dobrar">Dobrar</button>
+                    <button type="button" id="somar">Somar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer" style="text-align: center;">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
