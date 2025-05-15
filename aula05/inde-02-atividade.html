@@ -11,6 +11,9 @@
             margin: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .form-container {
@@ -18,6 +21,7 @@
             margin-left: 0;
             padding: 30px;
             border-radius: 8px;
+            margin-bottom: 40px; /* Adicionado para dar espaço ao footer */
         }
 
         form {
@@ -54,6 +58,14 @@
 
         main {
             padding: 40px;
+            flex-grow: 1; /* Garante que o main ocupe o espaço restante */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: auto; /* Garante que o rodapé fique no final da página */
         }
     </style>
 </head>
@@ -88,9 +100,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer" style="text-align: center;">
+    <footer id="footer">
         <p>&copy; 2025 - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
-
